@@ -25,5 +25,19 @@ npm run start
 
 This will start the application on [http://localhost:3000](http://localhost:3000).
 
+### Run migrations
+To run the migrations, you can use the following command:
+
+```bash
+npx prisma migrate dev
+```
+
+### Run seeds
+To run the seeds, you can use the following command:
+
+```bash
+npx prisma db seed
+```
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
