@@ -1,8 +1,8 @@
 {
   "name": "todo-backend-nest",
-  "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "version": "0.1.1",
+  "description": "Nestjs/Prisma/Nodejs implementation of the Todo-Backend API spec",
+  "author": "Ruben O. Alvarado",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
