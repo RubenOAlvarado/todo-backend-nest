@@ -53,4 +53,8 @@ export class TodosService {
       throw new NotFoundException(`Todo with ID ${id} not found`);
     }
   }
+
+  async removeAll() {
+    return await this.prisma.todo.deleteMany();
+  }
 }

@@ -105,4 +105,15 @@ export class TodosController {
   remove(@Param('id') id: string) {
     return this.todosService.remove(+id);
   }
+
+  @ApiOperation({ summary: 'Delete all todo items' })
+  @ApiOkResponse({
+    description: 'Return all todo items.',
+    type: TodoResponseDto,
+    isArray: true,
+  })
+  @Delete()
+  removeAll() {
+    return this.todosService.removeAll();
+  }
 }
